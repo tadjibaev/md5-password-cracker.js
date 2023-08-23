@@ -49,13 +49,13 @@ for (var i = 0; i < numWorkers; i++) {
   // Set worker settings
   worker.postMessage({ cmd: "setWorkerId", data: i })
   worker.postMessage({ cmd: "setMaxPassLength", data: 5 })
-  worker.postMessage({ cmd: "setPassToCrack", data: "54d75975e615f0638b6181592a4d929f" })
+  worker.postMessage({ cmd: "setPassToCrack", data: "ff86024a1f6d4478f304a4d37d4a710a" })
 
   // Start worker
   worker.postMessage({ cmd: "performCrack", data: {start: i, hop: numWorkers} })
 }
 
-status("Searching for password match for hash '54d75975e615f0638b6181592a4d929f'.")
+status("Searching for password match for hash 'ff86024a1f6d4478f304a4d37d4a710a'.")
 log("Testing uppercase, lowercase, and numbers.")
 
 
